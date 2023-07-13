@@ -1,4 +1,6 @@
-<input type="text" [(ngModel)]="newTask.title">
- <input type="date" [(ngModel)]="newTask.deadline">
- <button (click)="submit()">追加</button>
- <br>newTaskの値: {{ newTask|json }}
+<form>
+  <h1>ToDo Form</h1>
+  <input class="form-control" type="text" [(ngModel)]="newTask.title">
+  <input class="mt-3" type="date" [(ngModel)]="newTask.deadline"><br>
+  <button class="btn btn-primary mt-3" (click)="submit()">追加</button>
+</form>
