@@ -9,7 +9,7 @@
     <div class="col-md-6 offset-3">
       <h1>Todo List</h1>
       <ul>
-        <li *ngFor="let task of tasks">
+        <li *ngFor="let task of tasks" class="mt-1">
           <app-task-list-item [task]="task"></app-task-list-item>
         </li>
       </ul>
